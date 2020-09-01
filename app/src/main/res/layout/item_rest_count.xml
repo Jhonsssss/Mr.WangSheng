@@ -7,7 +7,7 @@
     <ProgressBar
         android:id="@+id/item_progress"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="@dimen/x20"
         style="?android:attr/progressBarStyleHorizontal"
         android:max="100"
         android:progress="50"
@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/item_tv_count"
-         android:textSize="13sp"
+         android:textSize="@dimen/x13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"

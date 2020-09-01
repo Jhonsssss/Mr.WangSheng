@@ -4,8 +4,8 @@
     android:gravity="center"
     android:layout_height="match_parent">
     <RelativeLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -25,7 +25,7 @@
             android:id="@+id/ll_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="@dimen/x30"
             android:orientation="vertical">
 
 
@@ -34,10 +34,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="@dimen/x50"
                 android:text="定个小目标，先赚它一个亿"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/x20"
 
                 />
 
@@ -46,51 +46,51 @@
                 android:id="@+id/tv_wish_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="@dimen/x55"
                 android:gravity="center"
                 android:layout_gravity="center_horizontal"
                 android:text="心愿期限:2019-10-09"
                 android:textColor="@color/black"
-                android:textSize="12sp" />
+                android:textSize="@dimen/x12" />
 
 
 
             <TextView
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="13dp"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginTop="@dimen/x13"
                 android:id="@+id/tv_wish_time_finished"
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="@dimen/x25"
                 android:background="@drawable/bg_text_red"
                 android:gravity="center"
-                android:paddingRight="5dp"
-                android:paddingStart="5dp"
+                android:paddingRight="@dimen/x5"
+                android:paddingStart="@dimen/x5"
                 android:text="还剩下200天"
                 android:textColor="#FA3773"
-                android:textSize="14sp"
+                android:textSize="@dimen/x14"
                 />
 
 
 
             <TextView
-                android:layout_marginTop="120dp"
-                android:layout_marginRight="25dp"
+                android:layout_marginTop="@dimen/x120"
+                android:layout_marginRight="@dimen/x25"
                 android:id="@+id/tv_wish_current_date"
-                android:layout_width="70dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/x70"
+                android:layout_height="@dimen/x25"
                 android:background="@drawable/bg_text"
-                android:padding="5dp"
+                android:padding="@dimen/x5"
                 android:gravity="center"
                 android:layout_gravity="right"
                 android:text="2019-04-19"
                 android:textColor="#6C6C6C"
-                android:textSize="12sp"
+                android:textSize="@dimen/x12"
                 android:textStyle="italic" />
 
             <LinearLayout
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_marginBottom="@dimen/x25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
@@ -101,12 +101,12 @@
 
                 <TextView
 
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="@dimen/x25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#6C6C6C"
                     android:text="by:"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/x14"
                     android:gravity="right"
                     />
 
@@ -116,8 +116,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:text="Ms.Mary"
-                    android:textSize="14sp"
-                    android:layout_marginRight="25dp"
+                    android:textSize="@dimen/x14"
+                    android:layout_marginRight="@dimen/x25"
                     />
 
 

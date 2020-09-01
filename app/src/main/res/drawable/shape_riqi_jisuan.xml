@@ -3,16 +3,16 @@
 
     <item>
         <shape >
-            <corners android:radius="20dp" />
+            <corners android:radius="@dimen/x20" />
             <gradient  android:angle="90" android:startColor="#20FA3773"  android:centerColor="#FA3773" android:endColor="#00FA3773"/>
         </shape>
 
     </item>
 
 
-    <item  android:bottom="2dp">
+    <item  android:bottom="@dimen/x2">
         <shape >
-            <corners android:radius="20dp" />
+            <corners android:radius="@dimen/x20" />
             <solid android:color="#FA3773" />
         </shape>
 

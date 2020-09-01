@@ -6,21 +6,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/x50"
         android:background="#EEEEEE">
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="@dimen/x1"
             android:background="#aaa" />
 
         <ImageView
             android:id="@+id/iv_cancel"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x35"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="17dp"
-            android:padding="8dp"
+            android:layout_marginLeft="@dimen/x17"
+            android:padding="@dimen/x8"
             android:src="@mipmap/to_down" />
 
         <CheckBox
@@ -28,12 +28,12 @@
             android:id="@+id/cb_lunar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="17dp"
+            android:layout_marginRight="@dimen/x17"
              android:scaleX="0.9"
             android:scaleY="0.9"
             android:text="农历"
             android:textColor="#24AD9D"
-            android:textSize="18sp" />
+            android:textSize="@dimen/x18" />
 
         <TextView
             android:id="@+id/tv_finish"
@@ -41,15 +41,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="17dp"
-            android:padding="8dp"
+            android:layout_marginRight="@dimen/x17"
+            android:padding="@dimen/x8"
             android:text="完成"
             android:textColor="#24AD9D"
-            android:textSize="18sp" />
+            android:textSize="@dimen/x18" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="@dimen/x1"
             android:background="#aaa" />
     </RelativeLayout>
 

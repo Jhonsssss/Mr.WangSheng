@@ -4,18 +4,18 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="@dimen/x75"
         android:background="@color/white"
         >
 
 
         <ImageView
             android:id="@+id/iv_add_wish"
-            android:padding="10dp"
+            android:padding="@dimen/x10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/icon_add"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="@dimen/x5"
             android:layout_centerVertical="true"
             />
 
@@ -42,16 +42,16 @@
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/x15"
 
 
                 />
             
             <View
                 android:id="@+id/v_wish_no"
-                android:layout_marginTop="10dp"
-                android:layout_width="65dp"
-                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/x2"
                 android:background="@color/black"/>
         </LinearLayout>
 
@@ -70,7 +70,7 @@
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
                 android:textColor="#6E6E6E"
-                android:textSize="15sp"
+                android:textSize="@dimen/x15"
 
 
                 />
@@ -78,9 +78,9 @@
             <View
                 android:id="@+id/v_wish_has"
                 android:visibility="invisible"
-                android:layout_marginTop="10dp"
-                android:layout_width="65dp"
-                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/x2"
                 android:background="@color/black"/>
         </LinearLayout>
         </LinearLayout>
@@ -91,7 +91,7 @@
 
   <FrameLayout
       android:id="@+id/fl_content_child"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="@dimen/x10"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
 </LinearLayout>

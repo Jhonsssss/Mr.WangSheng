@@ -7,13 +7,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/x50"
         android:orientation="horizontal"
         >
 
         <ImageView
             android:id="@+id/iv_setting"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/shezhi_icon_bai"
@@ -21,28 +21,28 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/x50"
             android:text="死之钟"
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="@dimen/x18"
 
             />
 
     </RelativeLayout>
 
     <com.statistical.time.widget.Watch
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/x10"
         android:id="@+id/watch"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/x170"
         />
 
 
     <LinearLayout
 
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="@dimen/x15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -54,25 +54,25 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="你还剩下"
-            android:textSize="12sp"
+            android:textSize="@dimen/x12"
             />
 
         <TextView
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/x15"
             android:id="@+id/tv_rest_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="78.287854"
-            android:textSize="18sp"
+            android:textSize="@dimen/x18"
             />
         <TextView
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/x15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="年"
-            android:textSize="12sp"
+            android:textSize="@dimen/x12"
             />
 
     </LinearLayout>
@@ -82,7 +82,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/x25"
         android:gravity="center"
         >
 
@@ -94,11 +94,11 @@
             />
 
         <TextView
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/x15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/x12"
             android:text="您的余生电量还剩余  :  "
             />
         <TextView
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="@dimen/x16"
             android:text="78%"
             />
 
@@ -114,44 +114,44 @@
     </LinearLayout>
 
     <View
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/x12"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/x1"
         android:background="@color/white"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
         />
 
     <TextView
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/x18"
+        android:layout_marginTop="@dimen/x20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:text="剩下的日子里，你大约可以"
         />
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
 
     <TextView
         android:id="@+id/empty_view"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_marginBottom="@dimen/x15"
         android:layout_width="match_parent"
         android:background="#EEEEEE"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="@dimen/x15"
         android:gravity="center"
         android:text="没有定制?点击前往定制"
         android:layout_height="match_parent"

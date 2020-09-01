@@ -7,13 +7,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/x50"
         android:orientation="horizontal"
         >
 
         <ImageView
             android:id="@+id/iv_setting"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/shezhi_icon"
@@ -21,55 +21,55 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/x50"
             android:text="生之时"
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/x18"
 
             />
 
     </RelativeLayout>
     
     <com.statistical.time.widget.Watch
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/x10"
         android:id="@+id/watch"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="@dimen/x170"
+        android:layout_height="@dimen/x170"
         />
 
 
     <TextView
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="@dimen/x14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="你的年龄"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         />
     <TextView
         android:id="@+id/tv_birthday_tip"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="@dimen/x15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="还有81天满21岁"
-        android:textSize="18sp"
+        android:textSize="@dimen/x18"
         />
 
 
     <View
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/x20"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="@dimen/x1"
         android:background="@color/black"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
         />
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/x20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
@@ -79,9 +79,9 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginRight="@dimen/x25"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

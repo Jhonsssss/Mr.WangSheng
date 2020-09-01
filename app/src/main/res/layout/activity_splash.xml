@@ -26,14 +26,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="把活着的每一天看作生命的最后一天。—海伦·凯勒"
-        android:lineSpacingExtra="10dp"
-        android:textSize="16sp"
+        android:lineSpacingExtra="@dimen/x10"
+        android:textSize="@dimen/x16"
         android:textColor="@color/black"
         android:textStyle="italic"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
         android:gravity="center"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="@dimen/x70"
         />
     <!--<include layout="@layout/activity_splash_ad"/>-->
 

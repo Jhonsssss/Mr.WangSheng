@@ -11,11 +11,11 @@
       android:id="@+id/tv_agpstips"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginLeft="5dp"
-      android:layout_marginRight="5dp"
+      android:layout_marginLeft="@dimen/x5"
+      android:layout_marginRight="@dimen/x5"
       android:text="地问我下载"
       android:textColor="@color/color_white"
-      android:textSize="12sp"
+      android:textSize="@dimen/x12"
       />
 
 

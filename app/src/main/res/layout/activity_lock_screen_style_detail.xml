@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/x60"
         android:background="@color/white">
 
         <ImageView
@@ -15,8 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:padding="10dp"
+            android:layout_marginLeft="@dimen/x10"
+            android:padding="@dimen/x10"
             android:src="@mipmap/back" />
 
 
@@ -26,7 +26,7 @@
             android:layout_centerInParent="true"
             android:text="动态时钟"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/x16" />
 
     </RelativeLayout>
 
@@ -46,25 +46,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginRight="70dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginLeft="@dimen/x35"
+                android:layout_marginRight="@dimen/x35"
+                android:layout_marginTop="@dimen/x10"
                 android:background="@drawable/shape_black_round"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <com.statistical.time.widget.Watch
                     android:id="@+id/watch"
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
-                    android:layout_marginTop="80dp" />
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/x90"
+                    android:layout_marginTop="@dimen/x80" />
 
 
                 <LinearLayout
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="@dimen/x15"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
@@ -73,24 +73,24 @@
                         android:layout_height="wrap_content"
                         android:text="你还剩下"
                         android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/x12" />
 
                     <TextView
                         android:id="@+id/tv_rest_year"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/x15"
                         android:text="78.287854"
                         android:textColor="@color/white"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/x18" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/x15"
                         android:text="年"
                         android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/x12" />
 
                 </LinearLayout>
 
@@ -98,8 +98,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="80dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/x80"
+                    android:layout_marginTop="@dimen/x25"
                     android:gravity="center">
 
                     <ImageView
@@ -111,10 +111,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/x15"
                         android:text="您的余生电量还剩余  :  "
                         android:textColor="@color/white"
-                        android:textSize="12sp" />
+                        android:textSize="@dimen/x12" />
 
                     <TextView
                         android:id="@+id/tv_rest_percent"
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:text="78%"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="@dimen/x16" />
 
 
                 </LinearLayout>
@@ -130,40 +130,40 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginTop="10dp"
-                android:padding="3dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/x10"
+                android:padding="@dimen/x3"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_marginLeft="@dimen/x15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_gray_round"
                 android:gravity="left"
-                android:textSize="12sp"
+                android:textSize="@dimen/x12"
                 android:textColor="@color/red"
                 android:text="设置锁屏时请关闭系统锁屏及其他锁屏（如锁屏壁纸类APP，防止与其冲突）
 保证程序允许开机自启动（保证锁屏获取必要权限）" />
 
 
             <TextView
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginLeft="@dimen/x15"
                 android:drawableLeft="@mipmap/abc_scrubber_control_to_pressed_mtrl_000"
-                android:drawablePadding="5dp"
+                android:drawablePadding="@dimen/x5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="动态时钟锁屏："
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/x15"
                 />
             <TextView
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_marginTop="@dimen/x15"
+                android:layout_marginLeft="@dimen/x30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="屏幕两栖就能看到是周滴滴答答的在转动，剩余生命年限一刻不停的在减少，数字触目惊心，或在当下，珍惜此刻。"
                 android:textColor="@color/color_3B3E45"
-                android:textSize="12sp"
+                android:textSize="@dimen/x12"
                 />
         </LinearLayout>
 
@@ -173,14 +173,14 @@
 
     <TextView
         android:id="@+id/tv_use_lock"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/x10"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="@dimen/x42"
         android:background="#FA3773"
         android:text="使  用"
-        android:textSize="16sp"
+        android:textSize="@dimen/x16"
         android:gravity="center"
         android:textColor="@color/white"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/x5"
         />
 </LinearLayout>

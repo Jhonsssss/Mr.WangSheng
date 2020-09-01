@@ -5,7 +5,7 @@
 
 
     <com.statistical.time.widget.NetworkImageView
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="@dimen/x5"
         android:id="@+id/item_iv_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

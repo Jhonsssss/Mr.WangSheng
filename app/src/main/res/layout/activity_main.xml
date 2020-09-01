@@ -8,7 +8,7 @@
     android:clipChildren="false"
     android:clipToPadding="false"
     app:edPosition="1"
-    app:edMenuSize="200dp"
+    app:edMenuSize="@dimen/x200"
     app:edMenuBackground="#dddddd">
 
     <LinearLayout
@@ -29,7 +29,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/x60"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -52,8 +52,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="生之时"
-                android:textSize="14sp"
-                android:layout_marginTop="5dp"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x5"
                 android:textColor="@color/black"
                 />
 
@@ -78,8 +78,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="死之钟"
-                android:textSize="14sp"
-                android:layout_marginTop="5dp"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x5"
                 android:textColor="@color/black"
                 />
 
@@ -104,8 +104,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="心愿单"
-                android:textSize="14sp"
-                android:layout_marginTop="5dp"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x5"
                 android:textColor="@color/black"
                 />
 
@@ -130,8 +130,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="日期计算"
-                android:textSize="14sp"
-                android:layout_marginTop="5dp"
+                android:textSize="@dimen/x14"
+                android:layout_marginTop="@dimen/x5"
                 android:textColor="@color/black"
                 />
 

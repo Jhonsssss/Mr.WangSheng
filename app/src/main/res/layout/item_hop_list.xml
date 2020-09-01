@@ -5,10 +5,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="@dimen/x45"
         android:orientation="horizontal"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:paddingLeft="@dimen/x15"
+        android:paddingRight="@dimen/x15"
         android:gravity="center_vertical"
         >
 
@@ -19,7 +19,7 @@
             android:id="@+id/item_tv_hope"
             android:text="写日记"
             android:textColor="#999999"
-            android:textSize="14sp"
+            android:textSize="@dimen/x14"
             android:gravity="center_vertical"
             />
 
@@ -33,5 +33,5 @@
     <View
         android:layout_width="match_parent"
         android:background="#F9F9F9"
-        android:layout_height="0.5dp"/>
+        android:layout_height="@dimen/x1"/>
 </LinearLayout>

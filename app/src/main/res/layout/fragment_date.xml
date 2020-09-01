@@ -6,12 +6,12 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/x50"
         android:text="日期计算"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="@dimen/x18"
 
         />
 
@@ -30,14 +30,14 @@
               android:layout_height="wrap_content"
               android:orientation="vertical"
               android:background="@color/black"
-              android:paddingLeft="25dp"
-              android:paddingRight="25dp"
+              android:paddingLeft="@dimen/x25"
+              android:paddingRight="@dimen/x25"
               >
               <TextView
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:text="你的计算结果"
                   android:gravity="center"
@@ -47,8 +47,8 @@
               <TextView
                   android:id="@+id/tv_year"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0年"
@@ -57,10 +57,10 @@
                   />
               <TextView
                   android:id="@+id/tv_month"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0月"
@@ -69,10 +69,10 @@
                   />
               <TextView
                   android:id="@+id/tv_week"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0周"
@@ -81,10 +81,10 @@
                   />
               <TextView
                   android:id="@+id/tv_day"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0天"
@@ -93,10 +93,10 @@
                   />
               <TextView
                   android:id="@+id/tv_hour"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0小时"
@@ -105,10 +105,10 @@
                   />
               <TextView
                   android:id="@+id/tv_min"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0分钟"
@@ -117,70 +117,70 @@
                   />
               <TextView
                   android:id="@+id/tv_second"
-                  android:layout_marginTop="5dp"
+                  android:layout_marginTop="@dimen/x5"
                   android:layout_width="match_parent"
-                  android:layout_height="30dp"
-                  android:textSize="12sp"
+                  android:layout_height="@dimen/x30"
+                  android:textSize="@dimen/x12"
                   android:textColor="@color/white"
                   android:background="@color/color_3B3E45"
                   android:text="0秒"
                   android:gravity="center"
-                  android:layout_marginBottom="5dp"
+                  android:layout_marginBottom="@dimen/x5"
                   />
           </LinearLayout>
 
           <TextView
               android:layout_width="match_parent"
-              android:layout_height="36dp"
+              android:layout_height="@dimen/x36"
               android:textColor="@color/black"
               android:text="开始时间"
-              android:textSize="12sp"
+              android:textSize="@dimen/x12"
               android:gravity="center"
               />
           <TextView
               android:id="@+id/tv_start_time"
-              android:layout_marginLeft="55dp"
-              android:layout_marginRight="55dp"
+              android:layout_marginLeft="@dimen/x55"
+              android:layout_marginRight="@dimen/x55"
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="@dimen/x40"
               android:background="@drawable/shape_riqi_shijian"
               android:textColor="@color/black"
               android:text="2015-05-12 17:07:00"
-              android:textSize="12sp"
+              android:textSize="@dimen/x12"
               android:gravity="center"
               />
           <TextView
               android:layout_width="match_parent"
-              android:layout_height="36dp"
+              android:layout_height="@dimen/x36"
               android:textColor="@color/black"
               android:text="结束时间"
-              android:textSize="12sp"
+              android:textSize="@dimen/x12"
               android:gravity="center"
               />
           <TextView
               android:id="@+id/tv_end_time"
-              android:layout_marginLeft="55dp"
-              android:layout_marginRight="55dp"
+              android:layout_marginLeft="@dimen/x55"
+              android:layout_marginRight="@dimen/x55"
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="@dimen/x40"
               android:background="@drawable/shape_riqi_shijian"
               android:textColor="@color/black"
               android:text="2015-05-12 17:07:00"
-              android:textSize="12sp"
+              android:textSize="@dimen/x12"
               android:gravity="center"
               />
           <TextView
               android:id="@+id/tv_jisuan_time"
-              android:layout_marginTop="25dp"
-              android:layout_marginLeft="55dp"
-              android:layout_marginRight="55dp"
+              android:layout_marginTop="@dimen/x25"
+              android:layout_marginLeft="@dimen/x55"
+              android:layout_marginRight="@dimen/x55"
               android:layout_width="match_parent"
-              android:layout_height="42dp"
+              android:layout_height="@dimen/x42"
               android:textColor="@color/white"
               android:text="开始计算"
               android:background="@drawable/shape_riqi_jisuan"
-              android:textSize="12sp"
-              android:paddingBottom="7dp"
+              android:textSize="@dimen/x12"
+              android:paddingBottom="@dimen/x7"
               android:gravity="center"
               />
 

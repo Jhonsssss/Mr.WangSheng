@@ -6,18 +6,18 @@
     <RelativeLayout
   android:visibility="gone"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/x60"
         android:background="@color/white"
         >
 
         <ImageView
             android:id="@+id/iv_close"
             android:layout_centerVertical="true"
-            android:padding="10dp"
+            android:padding="@dimen/x10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/back"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="@dimen/x10"
             />
 
 
@@ -28,7 +28,7 @@
             android:text="设置"
             android:layout_centerInParent="true"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/x16"
 
             />
 
@@ -38,11 +38,11 @@
 
     <LinearLayout
         android:visibility="gone"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/x20"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_height="@dimen/x45"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
         android:orientation="horizontal"
         >
         <TextView
@@ -52,7 +52,7 @@
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:text="时钟样式"
-            android:textSize="12sp"
+            android:textSize="@dimen/x12"
             android:gravity="center_vertical"
             />
 
@@ -64,23 +64,23 @@
 
             <TextView
                 android:id="@+id/tv_style_1"
-                android:layout_width="83dp"
-                android:layout_height="31dp"
+                android:layout_width="@dimen/x83"
+                android:layout_height="@dimen/x31"
                 android:text="样式一"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:background="@drawable/txt_left_selector"
-                android:textSize="12sp"/>
+                android:textSize="@dimen/x12"/>
 
             <TextView
                 android:id="@+id/tv_style_2"
-                android:layout_width="83dp"
-                android:layout_height="31dp"
+                android:layout_width="@dimen/x83"
+                android:layout_height="@dimen/x31"
                 android:text="样式二"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:background="@drawable/txt_right_selector"
-                android:textSize="12sp"/>
+                android:textSize="@dimen/x12"/>
 
 
         </LinearLayout>
@@ -89,11 +89,11 @@
     </LinearLayout>
     <LinearLayout
         android:visibility="gone"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/x20"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_height="@dimen/x45"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
         android:orientation="horizontal"
         >
         <TextView
@@ -103,7 +103,7 @@
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:text="时钟音效"
-            android:textSize="12sp"
+            android:textSize="@dimen/x12"
             android:gravity="center_vertical"
             />
 

@@ -8,64 +8,64 @@
 
     <com.statistical.time.widget.Watch
         android:id="@+id/watch"
-        android:layout_marginTop="70dp"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_marginTop="@dimen/x70"
+        android:layout_width="@dimen/x140"
+        android:layout_height="@dimen/x140"
         />
 
 
     <TextView
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="@dimen/x70"
         android:layout_width="match_parent"
-        android:layout_height="36dp"
+        android:layout_height="@dimen/x36"
         android:textColor="@color/black"
         android:text="你的出生日期"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:gravity="center"
         />
     <TextView
         android:id="@+id/tv_start_time"
-        android:layout_marginLeft="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginLeft="@dimen/x55"
+        android:layout_marginRight="@dimen/x55"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/x40"
         android:background="@drawable/shape_riqi_shijian"
         android:textColor="@color/black"
         android:text="2015-05-12 17:07:00"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:gravity="center"
         />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="36dp"
+        android:layout_height="@dimen/x36"
         android:textColor="@color/black"
         android:text="猜猜你能活多少岁"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:gravity="center"
         />
     <TextView
         android:id="@+id/tv_end_time"
-        android:layout_marginLeft="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginLeft="@dimen/x55"
+        android:layout_marginRight="@dimen/x55"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/x40"
         android:background="@drawable/shape_riqi_shijian"
         android:textColor="@color/black"
         android:text="80"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:gravity="center"
         />
     <TextView
         android:id="@+id/tv_jisuan_time"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginRight="55dp"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginLeft="@dimen/x55"
+        android:layout_marginRight="@dimen/x55"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/x40"
         android:background="@drawable/shape_riqi_jisuan"
         android:textColor="@color/white"
         android:text="完成"
-        android:textSize="12sp"
+        android:textSize="@dimen/x12"
         android:gravity="center"
         />
 

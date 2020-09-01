@@ -4,16 +4,16 @@
     android:layout_height="match_parent">
 
     <TextView
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginLeft="@dimen/x10"
+    android:layout_marginRight="@dimen/x10"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="@dimen/x40"
     android:id="@+id/item_tv_event"
     android:background="@drawable/selector_item_event_bg"
     android:textColor="@color/black_to_white"
     android:text="写日记"
-    android:paddingLeft="15dp"
-    android:textSize="14sp"
+    android:paddingLeft="@dimen/x15"
+    android:textSize="@dimen/x14"
     android:gravity="center_vertical"
     />
     <View
