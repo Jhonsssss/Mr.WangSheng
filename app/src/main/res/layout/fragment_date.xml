@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="日期计算"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/black"
+              android:paddingLeft="25dp"
+              android:paddingRight="25dp"
+              >
+              <TextView
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:text="你的计算结果"
+                  android:gravity="center"
+
+                  />
+
+              <TextView
+                  android:id="@+id/tv_year"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0年"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_month"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0月"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_week"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0周"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_day"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0天"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_hour"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0小时"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_min"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0分钟"
+                  android:gravity="center"
+
+                  />
+              <TextView
+                  android:id="@+id/tv_second"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/white"
+                  android:background="@color/color_3B3E45"
+                  android:text="0秒"
+                  android:gravity="center"
+                  android:layout_marginBottom="5dp"
+                  />
+          </LinearLayout>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="36dp"
+              android:textColor="@color/black"
+              android:text="开始时间"
+              android:textSize="12sp"
+              android:gravity="center"
+              />
+          <TextView
+              android:id="@+id/tv_start_time"
+              android:layout_marginLeft="55dp"
+              android:layout_marginRight="55dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@drawable/shape_riqi_shijian"
+              android:textColor="@color/black"
+              android:text="2015-05-12 17:07:00"
+              android:textSize="12sp"
+              android:gravity="center"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="36dp"
+              android:textColor="@color/black"
+              android:text="结束时间"
+              android:textSize="12sp"
+              android:gravity="center"
+              />
+          <TextView
+              android:id="@+id/tv_end_time"
+              android:layout_marginLeft="55dp"
+              android:layout_marginRight="55dp"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@drawable/shape_riqi_shijian"
+              android:textColor="@color/black"
+              android:text="2015-05-12 17:07:00"
+              android:textSize="12sp"
+              android:gravity="center"
+              />
+          <TextView
+              android:id="@+id/tv_jisuan_time"
+              android:layout_marginTop="25dp"
+              android:layout_marginLeft="55dp"
+              android:layout_marginRight="55dp"
+              android:layout_width="match_parent"
+              android:layout_height="42dp"
+              android:textColor="@color/white"
+              android:text="开始计算"
+              android:background="@drawable/shape_riqi_jisuan"
+              android:textSize="12sp"
+              android:paddingBottom="7dp"
+              android:gravity="center"
+              />
+
+      </LinearLayout>
+
+  </ScrollView>
+
+
+
+</LinearLayout>

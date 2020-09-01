@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:id="@+id/item_progress"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_drak"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/item_tv_count"
+         android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:text="大约20年"
+        />
+</RelativeLayout>

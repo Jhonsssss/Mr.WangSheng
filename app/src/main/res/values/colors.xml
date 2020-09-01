@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff201F24</color>
+    <color name="colorPrimaryDark">#ff201F24</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="red">#ee3b3b</color>
+
+
+    <!-- Start: from outer -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="drak">#ff201F24</color>
+    <color name="white_slight">#eeeeee</color>
+    <color name="white_alpha_6">#bbdddddd</color>
+    <color name="black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="black_slight">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="window_bg">#fff0f3f6</color>
+    <color name="color_3B3E45">#3B3E45</color>
+    <color name="dialog_stroke">#EAF0F8</color>
+    <color name="color_F8F8F8">#f8f8f8</color>
+</resources>

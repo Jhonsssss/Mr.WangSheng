@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <com.joooonho.SelectableRoundedImageView
+        app:sriv_left_top_corner_radius="5dp"
+        app:sriv_right_top_corner_radius="5dp"
+        app:sriv_left_bottom_corner_radius="5dp"
+        app:sriv_right_bottom_corner_radius="5dp"
+        android:id="@+id/gallery_image"
+        android:layout_width="175dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"/>
+
+
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/iv_wish_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg65"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp"
+            app:sriv_left_bottom_corner_radius="5dp"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/iv_wish_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/yiruyuan_icon"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_time_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="于2019-10-09如愿"
+            android:textColor="@color/red"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+             android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_hope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="写一本书"
+            android:textSize="12sp"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/tv_wish_will"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_slight"
+            android:text="2019-10-09"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+
+
+    <com.statistical.time.widget.Watch
+        android:id="@+id/watch"
+        android:layout_marginTop="70dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textColor="@color/black"
+        android:text="你的出生日期"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_riqi_shijian"
+        android:textColor="@color/black"
+        android:text="2015-05-12 17:07:00"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textColor="@color/black"
+        android:text="猜猜你能活多少岁"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_riqi_shijian"
+        android:textColor="@color/black"
+        android:text="80"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_jisuan_time"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_riqi_jisuan"
+        android:textColor="@color/white"
+        android:text="完成"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

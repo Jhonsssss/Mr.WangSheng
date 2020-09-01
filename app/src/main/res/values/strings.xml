@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">时间统计局</string>
+
+    <string name="mine">我的</string>
+    <string name="sending">发送中...</string>
+    <string name="exit_app_info">确定退出应用？</string>
+    <string name="agree">同意</string>
+    <string name="disagree">Disagree</string>
+    <string name="IKnown">I know</string>
+    <string name="tv_select_bg">请选择心愿背景</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+
+    <string-array name="hope_list">
+        <item>定一个小目标，先赚它一个亿</item>
+        <item>写一本书</item>
+        <item>种一棵树</item>
+        <item>尝试一次街头卖艺</item>
+        <item>给喜欢的人写一首诗</item>
+        <item>练出六块腹肌/马甲线</item>
+        <item>攀登一座真正的大山</item>
+        <item>学一种乐器</item>
+        <item>学会一种语言</item>
+        <item>学会绘画</item>
+        <item>练好毛笔字</item>
+        <item>跟一个人在凌晨0~3点压马路</item>
+        <item>喝醉酒在马路上唱歌</item>
+        <item>像暗恋的人表白</item>
+        <item>和闺蜜一起露营</item>
+        <item>独自穷游一次</item>
+        <item>读100本书</item>
+        <item>剔一次光头</item>
+        <item>养一只宠物</item>
+        <item>跑一次全马或者半马</item>
+        <item>在大自然中裸睡</item>
+        <item>参与一个公益项目</item>
+        <item>带着心爱的姑娘，吃遍天下美食</item>
+        <item>过远离手机一周的生活</item>
+        <item>和心爱的他/她环游全世界</item>
+    </string-array>
+
+
+    <string-array name="time_ming">
+        <item> 把活着的每一天看作生命的最后一天。—海伦·凯勒</item>
+        <item> 你热爱生命吗？那幺别浪费时间，由于时间是组成生命的材料。—富兰克林</item>
+        <item>时间就是生命，无故的空耗别人的时间，实在无异于谋财害命的。—鲁迅 </item>
+        <item> 最严重的浪费就是时间的浪费。—布封</item>
+        <item> 时间就是生命，时间就是速度，时间就是气力。—郭沫若</item>
+        <item>人生有一道困难，那就是如何使一寸光阴即是一寸生命。 </item>
+        <item>时间的步伐有三种：未来姗姗来迟，现在像箭一样飞逝，过往永远静立不动。—席勒 </item>
+        <item>少壮不努力，老大徒伤悲。—《长歌行》 </item>
+        <item> 吾生也有涯，而知也无涯。—庄子</item>
+        <item>少年易学老难成，一寸光阴不可轻。—朱熹 </item>
+        <item>一寸光阴一寸金，寸金难买寸光阴。 </item>
+        <item> 三更灯火五更鸡，正是男儿读书时，黑发不知勤学早，白发方悔读书迟。—颜真卿</item>
+        <item> 天波易谢，寸暑难留。—唐·王勃</item>
+        <item> 时间是最伟大、公正的裁判。</item>
+        <item>与时间抗争者面对的是一个刀枪不进的敌手。—塞·约翰逊 </item>
+        <item> 时间伟大的作者，她能写出未来的结局。—英国</item>
+        <item>时间能使隐躲的事物显露，也能使灿烂夺目的东西黯然无光。—意大利 </item>
+        <item> 时间是衡量事业的标准。—培根</item>
+        <item> 时间是审查一切罪犯的最老练的法官。—莎士比亚</item>
+        <item>“年”教给我们很多“日”不懂的东西。—爱献生 </item>
+        <item>时间比理性创造出更多的皈依者。—汤姆·潘恩 </item>
+        <item>欢娱不惜时光逝。—英国 </item>
+        <item>一年之计在于春，你看关于学习的名言警句。一日之计在于晨。—萧绎 </item>
+        <item>盛年不重来，一日难再晨。及时宜自勉，岁月不待人。—陶渊明 </item>
+        <item> 岁往弦吐箭。—孟效</item>
+        <item> 莫轻易，白了少年头，空悲切。—岳飞</item>
+        <item> 在今天和明天之间，有一段很长的时间；趁你还有精神的时候，学习迅速办事。—歌德</item>
+        <item>落日无边江不尽，此身此日更须忙。—陈师道 </item>
+        <item> 时间是由分秒积成的，善于利用零星时间的人，才会做出更大的成绩来。—华罗庚</item>
+        <item>用“分”来计算时间的人，比用“时来计算时间的人，时间多五十九倍。—雷巴柯夫 </item>
+        <item>善于利用时间的人，永远找得到充裕的时间。 </item>
+        <item>钉子是敲进往的，时间是挤出来的。 </item>
+        <item> 时间就象海绵里的水一样，只要你愿挤，总还是有的。—鲁迅</item>
+        <item>勤奋的人是时间的主人，懒惰的人是时间的奴隶。</item>
+        <item>谁对时间越吝啬，时间对谁就越慷慨。 </item>
+        <item>时间待人是同等的，而时间在每个人手里的价值却不同。 </item>
+        <item> 时间最不偏私，给任何人都是二十四小时；时间也最偏私，给任何人都不是二十四小时。—赫胥黎</item>
+        <item> 光阴有脚当珍惜，书田无税应勤耕。</item>
+        <item>时间是一条金河，莫让它轻轻地在你的指尖溜过。 </item>
+        <item> 时间是无声的脚步，不会由于我们有很多事情需要处理而稍停片刻。</item>
+        <item> 年难留，时易损。—南北朝·谢惠连</item>
+        <item>时间就是生命，无端的空耗别人的时间，其实无异于谋财害命的。 </item>
+        <item> 尊重生命、尊重他人也尊重自己的生命，是生命进程中的伴随物，也是心理健康的一个条件。—弗洛姆</item>
+        <item>天可补，海可填，南山可移。日月既往，不可复追。—曾国藩 </item>
+        <item> 人生天地之间，若白驹过隙，忽然而已。—庄子</item>
+        <item> 一个人越知道时间的价值，越倍觉失时的痛苦呀！—但丁</item>
+        <item> 逝者如斯夫，不舍昼夜。—孔子</item>
+        <item> 在所有的批评家中，最伟大、最正确、最天才的是时间。—别林斯基</item>
+        <item>一年之计在于春，一日之计在于晨。 </item>
+        <item>时间就是生命。 </item>
+        <item>辛勤的蜜蜂永远没有时间的悲哀。—布莱克 </item>
+        <item>勤勉的人，每周七个全天；懒惰的人，每周七个早晨。 </item>
+        <item> 利用寸阴是任何种类的战斗中博得胜利的秘诀。</item>
+        <item> 人寿几何？逝如朝霜。时无重至，华不再阳。—晋·陆机</item>
+        <item> 过于求速是做事的最大危险之一。—培根</item>
+        <item>合理安排时间，就等于节约时间。—培根 </item>
+        <item>完成工作的方法是爱惜每一分钟。—达尔文 </item>
+        <item> 使一个人的有限的生命，更加有效，也即等于延长了人的生命。—鲁迅</item>
+        <item> 懂得生命真谛的人，可以使短促的生命延长。—西塞罗</item>
+        <item>人生有两出悲剧：一是万念俱灰，另一是踌躇满志。—肖伯纳 </item>
+    </string-array>
+
+</resources>

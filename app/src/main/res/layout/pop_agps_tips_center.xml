@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/left_has_arrow"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/tv_agpstips"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:text="地问我下载"
+      android:textColor="@color/color_white"
+      android:textSize="12sp"
+      />
+
+
+</LinearLayout>
