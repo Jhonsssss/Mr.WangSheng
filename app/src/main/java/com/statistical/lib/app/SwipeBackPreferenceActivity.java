@@ -4,11 +4,12 @@ package com.statistical.lib.app;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.statistical.lib.SwipeBackLayout;
 
-public class SwipeBackPreferenceActivity extends PreferenceActivity implements SwipeBackActivityBase {
+public class SwipeBackPreferenceActivity extends AppCompatActivity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;
 
     @Override

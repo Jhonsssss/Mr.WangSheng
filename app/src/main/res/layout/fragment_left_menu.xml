@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -26,7 +27,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_sheng"
+            app:srcCompat="@mipmap/icon_sheng"
             />
 
         <TextView
@@ -52,7 +53,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_clock"
+            app:srcCompat="@mipmap/icon_clock"
             />
 
         <TextView
@@ -78,7 +79,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_bianji"
+            app:srcCompat="@mipmap/icon_bianji"
             />
 
         <TextView
@@ -104,7 +105,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_si"
+            app:srcCompat="@mipmap/icon_si"
             />
 
         <TextView
@@ -130,7 +131,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_bangzhu"
+            app:srcCompat="@mipmap/icon_bangzhu"
             />
 
         <TextView
@@ -156,7 +157,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/qq"
+            app:srcCompat="@mipmap/qq"
             />
 
         <TextView
@@ -182,7 +183,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_wenjuan"
+            app:srcCompat="@mipmap/icon_wenjuan"
             />
 
         <TextView
@@ -208,7 +209,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_fankui"
+            app:srcCompat="@mipmap/icon_fankui"
             />
 
         <TextView
@@ -234,7 +235,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_pingfen"
+            app:srcCompat="@mipmap/icon_pingfen"
             />
 
         <TextView
@@ -261,7 +262,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/icon_setting"
+            app:srcCompat="@mipmap/icon_setting"
             />
 
         <TextView
@@ -288,7 +289,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/weibo"
+            app:srcCompat="@mipmap/weibo"
             />
 
         <TextView
@@ -314,7 +315,7 @@
             android:layout_marginLeft="@dimen/x20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/guanyu"
+            app:srcCompat="@mipmap/guanyu"
             />
 
         <TextView

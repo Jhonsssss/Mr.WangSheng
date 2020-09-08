@@ -15,7 +15,6 @@ import android.text.TextUtils;
 import android.widget.EditText;
 
 
-import com.statistical.time.R;
 import com.statistical.time.application.MyApplication;
 
 import java.io.File;

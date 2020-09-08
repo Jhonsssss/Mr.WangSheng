@@ -28,6 +28,7 @@ import com.statistical.time.bean.CardBean;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.Constants;
 import com.statistical.time.common.EventBusCode;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UiUtil;
 import com.statistical.time.tool.UserUtils;
 import com.statistical.time.widget.Watch;
@@ -204,8 +205,15 @@ public class EditBirthdayActivity extends BaseActivity {
         watch.setWatchBgRes(R.mipmap.clock_view2_bg,0,0,0);
         initLunarPicker();
         initCustomOptionPicker();
+        initStatusHeight();
     }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
+    }
 
     @Override
     protected void onDestroy() {

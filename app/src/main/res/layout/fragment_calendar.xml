@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+    <View
+        android:id="@+id/status_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_month_day"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="12dp"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_lunar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_current"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_ripple">
+
+            <ImageView
+                android:id="@+id/ib_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_calendar"
+                android:tint="#000000" />
+
+            <TextView
+                android:id="@+id/tv_current_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="13"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.statistical.time.calendarview.library.CalendarLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/content_id">
+
+        <com.statistical.time.calendarview.library.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:calendar_padding="10dp"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+            app:max_year="2020"
+            app:min_year="2004"
+            app:month_view="com.statistical.time.calendarview.CustomMonthView"
+            app:month_view_show_mode="mode_fix"
+            app:other_month_lunar_text_color="#e1e1e1"
+            app:other_month_text_color="#e1e1e1"
+            app:scheme_text="假"
+            app:scheme_text_color="#333"
+            app:scheme_theme_color="#128c4b"
+            app:selected_lunar_text_color="#fff"
+            app:selected_text_color="#fff"
+            app:selected_theme_color="#046cea"
+            app:week_background="#fff"
+            app:week_start_with="sun"
+            app:week_text_color="#e1e1e1"
+            app:week_view="com.statistical.time.calendarview.CustomWeekView"
+            app:year_view="com.statistical.time.calendarview.CustomYearView"
+            app:year_view_day_text_color="#333333"
+            app:year_view_day_text_size="7sp"
+            app:year_view_month_text_color="#ff0000"
+            app:year_view_month_text_size="20sp"
+            app:year_view_scheme_color="#f17706"
+            app:year_view_select_text_color="#fff"
+            app:year_view_week_height="12dp"
+            app:year_view_week_text_color="#e1e1e1"
+            app:year_view_week_text_size="6sp" />
+
+
+
+
+
+        
+        <LinearLayout
+            android:padding="8dp"
+            android:id="@+id/content_id"
+            android:background="@color/content_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:includeFontPadding="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_wannian_riqi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="#FFEED9"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/tv_wannian_day"
+                        android:layout_width="wrap_content"
+                        android:text="6"
+                        android:textSize="18sp"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_wannian_week"
+                        android:layout_width="wrap_content"
+                        android:text="星期日"
+                        android:textSize="12sp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/ll_wannian_riqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_wannian_year_month"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_slight"
+                        android:text="2020年9月"
+                        android:includeFontPadding="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_wannian_nongli"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:text="七月十九"
+                        android:includeFontPadding="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_wannian_jiazi"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_slight"
+                        android:text="甲申月 壬子月"
+                        android:includeFontPadding="false"
+                        />
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_wannian_good"
+                    android:layout_below="@id/ll_wannian_riqi"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4B923F"
+                    android:text="宜:
+结婚
+领证
+订婚
+求嗣
+解除
+牧养
+纳畜
+裁衣"
+                    />
+                <TextView
+                    android:id="@+id/tv_wannian_bad"
+                    android:layout_below="@id/tv_wannian_good"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/red"
+                    android:text="忌:
+搬家
+装修
+开业
+入宅
+开工
+动土
+安床
+出行"
+                    />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_today_star"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_slight"
+                    android:text="今日星座"
+                    />
+                <TextView
+                    android:layout_below="@id/tv_today_star"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/ll_wannian_riqi2"
+                    android:layout_width="wrap_content"
+                    android:text="白羊座"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/ll_wannian_riqi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_today_star_date"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_slight"
+                        android:text="2020年9月4号"
+                        android:includeFontPadding="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_start_range"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_slight"
+                        android:text="时间：9月3号-10月3号"
+                        android:includeFontPadding="false"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_star_desc"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@id/ll_wannian_riqi2"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/orange"
+                    android:text="天秤座常常追求平等、和谐，擅于察言观色，交际能力很强，因此真心朋友不少，因为你也足够真诚，但是最大的缺点就是面对选择总是犹豫不决。天秤男容易在乎自己而忽略别人，天秤女就喜欢被陪伴的感觉。"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_click_detail"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击查看详情"
+                    android:textSize="14sp"
+                    android:textColor="@color/red"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#046cea"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_tianqi_riqi"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black_slight"
+                    android:text="2020年9月4日"
+                    android:includeFontPadding="false"
+                    />
+                    <TextView
+                        android:layout_below="@id/tv_tianqi_riqi"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/tv_wannian_temp"
+                        android:layout_width="wrap_content"
+                        android:text="XX°"
+                        android:textSize="36sp"
+                        android:textColor="#557CC7"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll__wannian_tianqi"
+                    android:layout_toRightOf="@id/tv_wannian_temp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignTop="@id/tv_wannian_temp"
+                    android:layout_alignBottom="@id/tv_wannian_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_today_weather"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/black_slight"
+                        android:text="XX"
+                        android:includeFontPadding="false"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_today_tip"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_slight"
+                        android:text="XXXXXXXXXXX。"
+                        android:includeFontPadding="false"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_today_address"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignTop="@id/tv_wannian_temp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_slight"
+                    android:text="XXXXXXXXX"
+                    android:includeFontPadding="false"
+                    />
+
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@id/tv_wannian_temp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_today_windy"
+                           android:textSize="12sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_slight"
+                        android:text="XXXXX"
+                        />
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:id="@+id/tv_today_weep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black_slight"
+                        android:text="XXXXX"
+                        android:textSize="12sp"
+                        />
+                    
+                </LinearLayout>
+              
+
+
+            </RelativeLayout>
+
+
+
+
+
+<!--                    <com.statistical.time.group.GroupRecyclerView-->
+<!--                        android:id="@+id/recyclerView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@color/content_background"-->
+<!--                        app:group_background="@color/content_background"-->
+<!--                        app:group_center="false"-->
+<!--                        app:group_has_header="false"-->
+<!--                        app:group_height="42dp"-->
+<!--                        app:group_padding_left="16dp"-->
+<!--                        app:group_padding_right="16dp"-->
+<!--                        app:group_text_color="#555555"-->
+<!--                        app:group_text_size="14sp" />-->
+
+        </LinearLayout>
+
+
+    </com.statistical.time.calendarview.library.CalendarLayout>
+
+
+</LinearLayout>
+

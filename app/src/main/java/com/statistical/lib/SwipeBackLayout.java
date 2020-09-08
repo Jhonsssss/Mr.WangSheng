@@ -1,12 +1,13 @@
 package com.statistical.lib;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -19,6 +20,7 @@ import com.statistical.time.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 
 public class SwipeBackLayout extends FrameLayout {
@@ -88,7 +90,7 @@ public class SwipeBackLayout extends FrameLayout {
      */
     private float mScrollThreshold = DEFAULT_SCROLL_THRESHOLD;
 
-    private Activity mActivity;
+    private AppCompatActivity mActivity;
 
     private boolean mEnable = true;
 
@@ -461,7 +463,7 @@ public class SwipeBackLayout extends FrameLayout {
         }
     }
 
-    public void attachToActivity(Activity activity) {
+    public void attachToActivity(AppCompatActivity activity) {
         mActivity = activity;
         TypedArray a = activity.getTheme().obtainStyledAttributes(new int[]{
                 android.R.attr.windowBackground

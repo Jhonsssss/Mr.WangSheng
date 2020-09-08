@@ -18,7 +18,7 @@
 
 
             <ImageView
-                android:src="@mipmap/bg23_"
+                app:srcCompat="@mipmap/bg23_"
                 android:id="@+id/tv_hope_bg"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/x215"

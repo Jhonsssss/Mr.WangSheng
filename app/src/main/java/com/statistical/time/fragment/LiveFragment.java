@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bigkoo.pickerview.utils.ChinaDate;
@@ -23,7 +22,7 @@ import com.statistical.time.bean.BirdayInfo;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.Constants;
 import com.statistical.time.common.EventBusCode;
-import com.statistical.time.tool.LogUtil;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UiUtil;
 import com.statistical.time.widget.MyRecyclerViewDivider;
 import com.statistical.time.widget.Watch;
@@ -77,8 +76,7 @@ public class LiveFragment extends BaseFragment {
     Watch watch;
     @BindView(R.id.recyclerview)
     RecyclerView recyclerView;
-    @BindView(R.id.tv_birthday_tip)
-    TextView tv_birthday_tip;
+
 
 
     @Nullable
@@ -106,8 +104,17 @@ public class LiveFragment extends BaseFragment {
             }
         });
 
+        initStatusHeight(rootView);
 
         return rootView;
+    }
+
+    private void initStatusHeight(View rootView) {
+        View status_bar_height =rootView.findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(getActivity());
+        status_bar_height.setLayoutParams(layoutParams);
+
     }
 
 
@@ -148,22 +155,22 @@ public class LiveFragment extends BaseFragment {
 //
 //                Log.e("td","td==="+td);
 //            }else{
-
-                int rest_date = (int) ((calendar.getTimeInMillis() - System.currentTimeMillis()) / 1000 / 60 / 60 / 24);
-                if (rest_date==0){
-                    tv_birthday_tip.setText("您今天生日了！！！");
-                }else if (rest_date<30){
-                    tv_birthday_tip.setText(String.format("距离你%1d岁生日还有%2d天！", birth_year,rest_date));
-                }else{
-                    double total_year = 1.0*(System.currentTimeMillis()-birdayTime)/1000/60/60/24/365;
-
-                 //   LogUtil.ws(total_year+"    "+System.currentTimeMillis()+"  "+birdayTime);
-                    tv_birthday_tip.setText(String.format("%.8f岁",total_year));
-
-
-                }
-
-
+//
+//                int rest_date = (int) ((calendar.getTimeInMillis() - System.currentTimeMillis()) / 1000 / 60 / 60 / 24);
+//                if (rest_date==0){
+//                    tv_birthday_tip.setText("您今天生日了！！！");
+//                }else if (rest_date<30){
+//                    tv_birthday_tip.setText(String.format("距离你%1d岁生日还有%2d天！", birth_year,rest_date));
+//                }else{
+//                    double total_year = 1.0*(System.currentTimeMillis()-birdayTime)/1000/60/60/24/365;
+//
+//                 //   LogUtil.ws(total_year+"    "+System.currentTimeMillis()+"  "+birdayTime);
+//                    tv_birthday_tip.setText(String.format("%.8f岁",total_year));
+//
+//
+//                }
+//
+//
 //            }
 
 

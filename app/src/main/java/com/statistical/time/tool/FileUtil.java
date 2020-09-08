@@ -1295,7 +1295,12 @@ public class FileUtil {
         }
     }
 
+    public static void createDirs(String localurl) {
+        if (!new File(localurl).getParentFile().exists()){
+            new File(localurl).getParentFile().mkdirs();
+        }
 
+    }
     /**
      * 文件重命名
      *

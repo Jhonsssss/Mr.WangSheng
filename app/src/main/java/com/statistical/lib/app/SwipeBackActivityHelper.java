@@ -1,8 +1,9 @@
 package com.statistical.lib.app;
 
-import android.app.Activity;
+
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -14,11 +15,11 @@ import com.statistical.time.R;
  * @author Yrom
  */
 public class SwipeBackActivityHelper {
-    private Activity mActivity;
+    private AppCompatActivity mActivity;
 
     private SwipeBackLayout mSwipeBackLayout;
 
-    public SwipeBackActivityHelper(Activity activity) {
+    public SwipeBackActivityHelper(AppCompatActivity activity) {
         mActivity = activity;
     }
 

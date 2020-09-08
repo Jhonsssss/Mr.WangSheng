@@ -11,12 +11,12 @@
     app:edMenuSize="@dimen/x200"
     app:edMenuBackground="#dddddd">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white"
-        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
 
     <FrameLayout
         android:id="@+id/fl_content"
@@ -45,7 +45,7 @@
                 android:id="@+id/iv_sheng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/selector_main_tab_sheng"
+                app:srcCompat="@drawable/selector_main_tab_sheng"
                 />
             
             <TextView
@@ -71,7 +71,7 @@
                 android:id="@+id/iv_si"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/selector_main_tab_si"
+                app:srcCompat="@drawable/selector_main_tab_si"
                 />
 
             <TextView
@@ -97,7 +97,7 @@
                 android:id="@+id/iv_xinyuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/selector_main_tab_yuanwang"
+                app:srcCompat="@drawable/selector_main_tab_yuanwang"
                 />
 
             <TextView
@@ -123,7 +123,7 @@
                 android:id="@+id/iv_riqi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/selector_main_tab_riqi"
+                app:srcCompat="@drawable/selector_main_tab_riqi"
                 />
 
             <TextView
@@ -142,7 +142,7 @@
     </LinearLayout>
 
 
-    <!--menu-->
+<!--    menu-->
     <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
         android:id="@+id/menulayout"
         android:layout_width="match_parent"

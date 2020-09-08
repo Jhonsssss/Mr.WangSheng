@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ import com.statistical.time.bean.EventCenter;
 import com.statistical.time.bean.EventInfo;
 import com.statistical.time.common.Constants;
 import com.statistical.time.service.LockScreenService;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UserUtils;
 import com.statistical.time.widget.Watch;
 
@@ -104,6 +106,14 @@ public class LockScreenStyleDetailActivity extends BaseActivity {
             }
         });
         setTimeUi();
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
+
     }
 
     private void setTimeUi() {

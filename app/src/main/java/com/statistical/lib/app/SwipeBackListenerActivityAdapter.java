@@ -1,7 +1,9 @@
 package com.statistical.lib.app;
 
-import android.app.Activity;
+
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+
 
 import com.statistical.lib.SwipeBackLayout;
 import com.statistical.lib.Utils;
@@ -13,9 +15,9 @@ import java.lang.ref.WeakReference;
  * Created by laysionqet on 2018/4/24.
  */
 public class SwipeBackListenerActivityAdapter implements SwipeBackLayout.SwipeListenerEx {
-    private final WeakReference<Activity> mActivity;
+    private final WeakReference<AppCompatActivity> mActivity;
 
-    public SwipeBackListenerActivityAdapter(@NonNull Activity activity) {
+    public SwipeBackListenerActivityAdapter(@NonNull AppCompatActivity activity) {
         mActivity = new WeakReference<>(activity);
     }
 
@@ -26,7 +28,7 @@ public class SwipeBackListenerActivityAdapter implements SwipeBackLayout.SwipeLi
 
     @Override
     public void onEdgeTouch(int edgeFlag) {
-        Activity activity = mActivity.get();
+        AppCompatActivity activity = mActivity.get();
         if (null != activity) {
             Utils.convertActivityToTranslucent(activity);
         }
@@ -39,7 +41,7 @@ public class SwipeBackListenerActivityAdapter implements SwipeBackLayout.SwipeLi
 
     @Override
     public void onContentViewSwipedBack() {
-        Activity activity = mActivity.get();
+        AppCompatActivity activity = mActivity.get();
         if (null != activity && !activity.isFinishing()) {
             activity.finish();
             activity.overridePendingTransition(0, 0);

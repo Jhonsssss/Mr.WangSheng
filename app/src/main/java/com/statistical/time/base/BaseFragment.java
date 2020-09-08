@@ -16,13 +16,17 @@
  */
 package com.statistical.time.base;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
+
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
-
 
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.dialog.LoadingDialog;
@@ -32,6 +36,9 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
 
 //import com.squareup.leakcanary.RefWatcher;
 
@@ -39,7 +46,6 @@ import java.io.Serializable;
  * @version 1.0 2016/5/20
  */
 public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
-
 
     protected T mPresenter;
 
@@ -50,7 +56,7 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
      * 设置添加屏幕的背景透明度
      * @param bgAlpha
      */
-    public void backgroundAlpha(Activity context, float bgAlpha)
+    public void backgroundAlpha(AppCompatActivity context, float bgAlpha)
     {
         WindowManager.LayoutParams lp = context.getWindow().getAttributes();
         lp.alpha = bgAlpha;
@@ -164,5 +170,7 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
             return  mLoadingDialog.isShowing();
         return false;
     }
+
+
 
 }

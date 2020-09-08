@@ -16,6 +16,7 @@ import com.statistical.time.activity.AddWishActivity;
 import com.statistical.time.base.BaseFragment;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
+import com.statistical.time.tool.SystemUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -59,9 +60,16 @@ public class WishFragment extends BaseFragment {
         unbinder = ButterKnife.bind(this, view);
         fragmentManager = getActivity().getSupportFragmentManager();
         setTab(0);
+        initStatusHeight(view);
         return view;
     }
+    private void initStatusHeight(View rootView) {
+        View status_bar_height =rootView.findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(getActivity());
+        status_bar_height.setLayoutParams(layoutParams);
 
+    }
     WishListFragment noWishFragment;
     WishListFragment hasWishFragment;
 

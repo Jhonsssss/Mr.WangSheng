@@ -6,12 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="dialog_loading_view" parent="@android:style/Theme.Holo.DialogWhenLarge">
-        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="windowNoTitle">true</item><!--无标题-->
         <item name="android:windowFrame">@null</item><!--边框-->
         <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
         <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
@@ -34,7 +36,7 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:windowContentOverlay">@null</item>

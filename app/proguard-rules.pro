@@ -35,7 +35,7 @@
   -ignorewarnings
   -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
-  -keep public class * extends android.app.Activity
+  -keep public class * extends android.app.AppCompatActivity
   -keep public class * extends android.app.Application
   -keep public class * extends android.app.Service
   -keep public class * extends android.content.BroadcastReceiver
@@ -100,7 +100,7 @@
       public <init>(android.content.Context, android.util.AttributeSet, int);
   }
 
-  -keepclassmembers class * extends android.app.Activity {
+  -keepclassmembers class * extends android.app.AppCompatActivity {
       public void *(android.view.View);
   }
 

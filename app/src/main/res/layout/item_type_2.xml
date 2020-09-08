@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent">
@@ -113,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/x215"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/type2_bg1_"
+                app:srcCompat="@mipmap/type2_bg1_"
                  />
         </LinearLayout>
 

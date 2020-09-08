@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -19,6 +20,7 @@ import com.statistical.time.bean.EventCenter;
 import com.statistical.time.bean.WishInfo;
 import com.statistical.time.common.Constants;
 import com.statistical.time.common.EventBusCode;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.TimeUtils;
 import com.statistical.time.widget.NetworkImageView;
 
@@ -99,7 +101,13 @@ public class WishDetailActivity extends BaseActivity {
         unbinder=  ButterKnife.bind(this);
 
        initData();
-
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
     }
 

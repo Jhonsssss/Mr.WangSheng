@@ -1,13 +1,14 @@
 package com.statistical.time.tool;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
+
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
 import android.util.DisplayMetrics;
@@ -17,18 +18,17 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.GravityEnum;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.statistical.time.R;
 import com.statistical.time.application.ActivityManager;
 import com.statistical.time.application.MyApplication;
-import com.statistical.time.dialog.AgpsRfreshPop;
 import com.statistical.time.dialog.MaterialDialogBuilderL;
 
 import java.text.DecimalFormat;
 import java.util.Locale;
+
 
 
 /**
@@ -73,12 +73,12 @@ public class UiUtil {
         return getContext().getResources();
     }
 
-    public static MaterialDialog getMaterialDialog(Activity activity, String str) {
+    public static MaterialDialog getMaterialDialog(AppCompatActivity activity, String str) {
 
         return getMaterialDialog(activity, str, false);
     }
 
-    public static MaterialDialog getMaterialDialog(Activity activity) {
+    public static MaterialDialog getMaterialDialog(AppCompatActivity activity) {
 
         return new MaterialDialogBuilderL(activity).cancelable(false)
                 .progress(true, 0)
@@ -88,7 +88,7 @@ public class UiUtil {
                 .show();
     }
 
-    public static MaterialDialog getMaterialDialog(Activity activity, Context context){
+    public static MaterialDialog getMaterialDialog(AppCompatActivity activity, Context context){
         return new MaterialDialogBuilderL(activity).cancelable(false)
                 .progress(true,0)
                 .content(context.getString(R.string.sending))
@@ -97,7 +97,7 @@ public class UiUtil {
                 .show();
     }
 
-    public static MaterialDialog getMaterialDialog(Activity activity, String str, boolean cancel) {
+    public static MaterialDialog getMaterialDialog(AppCompatActivity activity, String str, boolean cancel) {
         return new MaterialDialogBuilderL(activity).cancelable(cancel)
                 .progress(true, 0)
                 .content(str)
@@ -471,7 +471,7 @@ public class UiUtil {
     /**
      * 双击退出应用
      */
-    public static void exitBy2Click(final Activity activity) {
+    public static void exitBy2Click(final AppCompatActivity activity) {
         new MaterialDialogBuilderL(activity).content(UiUtil.getString(R.string.exit_app_info))
                 .cancelable(false)
                 .positiveText(R.string.agree)

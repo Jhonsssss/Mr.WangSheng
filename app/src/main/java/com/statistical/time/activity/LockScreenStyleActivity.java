@@ -8,13 +8,14 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.statistical.time.R;
-import com.statistical.time.adapter.HopeListAdapter;
 import com.statistical.time.adapter.LockStyleAdapter;
 import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UiUtil;
 import com.statistical.time.tool.UserUtils;
 import com.statistical.time.widget.MyRecyclerViewDivider;
@@ -45,7 +46,16 @@ public class LockScreenStyleActivity extends BaseActivity {
         setContentView(R.layout.activity_lock_screen_style);
         unbinder = ButterKnife.bind(this);
         initRecyclerView();
+        initStatusHeight();
     }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
+
+    }
+
     @BindView(R.id.recyclerview)
     RecyclerView recyclerView;
     private void initRecyclerView() {

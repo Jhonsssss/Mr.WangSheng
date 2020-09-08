@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.statistical.time.R;
 import com.statistical.time.adapter.TypeAdapter;
@@ -12,6 +13,7 @@ import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.EventBusCode;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UiUtil;
 import com.statistical.time.widget.ZoomOutPageTransformer;
 
@@ -53,6 +55,14 @@ Unbinder unbinder;
 
         style =getIntent().getIntExtra("style",1);
         initViewpager();
+
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
     }
 

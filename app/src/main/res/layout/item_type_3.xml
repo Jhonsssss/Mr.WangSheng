@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent">
@@ -21,7 +22,7 @@
                 android:layout_marginTop="@dimen/x70"
                 android:id="@+id/tv_hope_bg"
                 android:layout_width="match_parent"
-                android:src="@mipmap/type3_bg2_"
+                app:srcCompat="@mipmap/type3_bg2_"
                 android:layout_height="@dimen/x200"
                 android:scaleType="centerCrop"
               />

@@ -78,4 +78,98 @@ public class StringUtil {
                 .replaceAll("零+亿", "亿").replaceAll("亿万", "亿零")
                 .replaceAll("零+", "零").replaceAll("零$", "");
     }
+
+    public static String getweekStr(int week) {
+        String  text = "星期一";
+       switch (week){
+           case  1:
+               text = "星期一";
+               break;
+
+           case  2:
+               text = "星期二";
+               break;
+
+           case  3:
+               text = "星期三";
+               break;
+
+           case  4:
+               text = "星期四";
+               break;
+
+           case  5:
+               text = "星期五";
+               break;
+
+           case  6:
+               text = "星期六";
+               break;
+
+           case  0:
+               text = "星期日";
+               break;
+
+       }
+
+       return  text;
+
+    }
+
+    public static String getMonthyStr(int month) {
+        String  monthStr ="一月";
+      switch (month){
+          case 1:
+              monthStr ="一月";
+              break;
+
+          case 2:
+              monthStr ="二月";
+              break;
+
+          case 3:
+              monthStr ="三月";
+              break;
+
+          case 4:
+              monthStr ="四月";
+              break;
+
+          case 5:
+              monthStr ="五月";
+              break;
+
+          case 6:
+              monthStr ="六月";
+              break;
+
+          case 7:
+              monthStr ="七月";
+              break;
+
+          case 8:
+              monthStr ="八月";
+              break;
+
+          case 9:
+              monthStr ="九月";
+              break;
+
+          case 10:
+              monthStr ="十月";
+              break;
+
+          case 11:
+              monthStr ="冬月";
+              break;
+
+          case 12:
+              monthStr ="腊月";
+              break;
+
+      }
+
+      return monthStr;
+
+    }
 }

@@ -1,9 +1,10 @@
 package com.statistical.time.receiver;
 
-import android.app.Activity;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 
 import com.statistical.time.activity.LockScreenActivity;
@@ -21,7 +22,7 @@ public class LockScreenReceiver extends BroadcastReceiver {
             if (Parser.sPhoneCallState == TelephonyManager.CALL_STATE_IDLE) { // 手机状态为未来电的空闲状态
                 // 判断锁屏界面是否已存在，如果已存在就先finish，防止多个锁屏出现
                 if (!Parser.KEY_GUARD_INSTANCES.isEmpty()) {
-                    for (Activity activity : Parser.KEY_GUARD_INSTANCES) {
+                    for (AppCompatActivity activity : Parser.KEY_GUARD_INSTANCES) {
                         activity.finish();
                     }
                 }

@@ -13,6 +13,7 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.statistical.time.R;
@@ -23,7 +24,6 @@ import com.statistical.time.bean.BirdayInfo;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.bean.EventInfo;
 import com.statistical.time.tool.LogUtil;
-import com.statistical.time.tool.UserUtils;
 
 import java.util.List;
 
@@ -76,8 +76,9 @@ public class SplashActivity extends BaseActivity {
 //         imageView = findViewById(R.id.iv_splash_open);
 
         TextView tv_ming =findViewById(R.id.tv_ming);
+//        ImageView iv_slash =findViewById(R.id.iv_slash);
       String []  mings =   getResources().getStringArray(R.array.time_ming);
-
+//        iv_slash.setImageResource(R.mipmap.splash_bg1);
        int i  = (int) (Math.random()*mings.length);
        if (i<0) {
            i=0;

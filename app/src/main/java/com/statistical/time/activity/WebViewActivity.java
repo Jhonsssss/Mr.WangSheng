@@ -1,21 +1,20 @@
 package com.statistical.time.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.statistical.time.R;
@@ -23,6 +22,7 @@ import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.tool.LogUtil;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.widget.ProgressWebView;
 
 import java.io.Serializable;
@@ -104,12 +104,12 @@ public class WebViewActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == FILECHOOSER_RESULTCODE) {
             if (mUploadMessage == null) return;
-            Uri result = data == null || resultCode != Activity.RESULT_OK ? null : data.getData();
+            Uri result = data == null || resultCode != AppCompatActivity.RESULT_OK ? null : data.getData();
             mUploadMessage.onReceiveValue(result);
             mUploadMessage = null;
         } else if (requestCode == INPUT_FILE_REQUEST_CODE) {
             if (mFilePathCallback == null) return;
-            Uri result = data == null || resultCode != Activity.RESULT_OK ? null : data.getData();
+            Uri result = data == null || resultCode != AppCompatActivity.RESULT_OK ? null : data.getData();
             mFilePathCallback.onReceiveValue(result == null ? null : new Uri[]{result});
             mFilePathCallback = null;
 
@@ -131,8 +131,16 @@ public class WebViewActivity extends BaseActivity {
         if (!TextUtils.isEmpty(title_str)) {
             title.setText(title_str);
         }
-
+        initStatusHeight();
         initWebView();
+    }
+
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
+
     }
 
     @Override

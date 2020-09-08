@@ -1,7 +1,11 @@
 package com.statistical.time.application;
 
 
-import android.app.Activity;
+
+
+
+
+import android.support.v7.app.AppCompatActivity;
 
 import java.util.Stack;
 
@@ -13,11 +17,11 @@ import java.util.Stack;
  */
 public class ActivityManager {
 
-    //Activity 管理
-    private static Stack<Activity> activityStack;
+    //AppCompatActivity 管理
+    private static Stack<AppCompatActivity> activityStack;
 
     public ActivityManager() {
-        activityStack = new Stack<Activity>();
+        activityStack = new Stack<AppCompatActivity>();
     }
 
     private  static ActivityManager inStance=null;
@@ -32,9 +36,9 @@ public class ActivityManager {
      *
      * @param activity
      */
-    public void addActivity(Activity activity) {
+    public void addActivity(AppCompatActivity activity) {
         if (activityStack == null) {
-            activityStack = new Stack<Activity>();
+            activityStack = new Stack<AppCompatActivity>();
         }
         activityStack.add(activity);
     }
@@ -44,7 +48,7 @@ public class ActivityManager {
      *
      * @param activity
      */
-    public void removeActivity(Activity activity) {
+    public void removeActivity(AppCompatActivity activity) {
         if (activity != null) {
             activityStack.remove(activity);
         }
@@ -54,7 +58,7 @@ public class ActivityManager {
      * 结束当前Activity（堆栈中最后一个压入的）
      */
     public void finishActivity() {
-        Activity activity = activityStack.lastElement();
+        AppCompatActivity activity = activityStack.lastElement();
         finishActivity(activity);
     }
 
@@ -86,7 +90,7 @@ public class ActivityManager {
     /**
      * 结束指定的Activity
      */
-    public void finishActivity(Activity activity) {
+    public void finishActivity(AppCompatActivity activity) {
         if (activity != null) {
             activityStack.remove(activity);
             activity.finish();
@@ -99,7 +103,7 @@ public class ActivityManager {
      */
     public void finishActivity(Class<?> cls) {
         try {
-            for (Activity activity : activityStack) {
+            for (AppCompatActivity activity : activityStack) {
                 if (activity.getClass().equals(cls)) {
                     finishActivity(activity);
                     return;
@@ -119,7 +123,7 @@ public class ActivityManager {
      */
     public boolean isActivityExist(Class<?> clz) {
         try {
-            for (Activity activity : activityStack) {
+            for (AppCompatActivity activity : activityStack) {
                 if (activity.getClass().equals(clz)) {
                     return true;
                 }

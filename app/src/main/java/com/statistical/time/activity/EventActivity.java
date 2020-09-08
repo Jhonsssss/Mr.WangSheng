@@ -8,20 +8,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.statistical.time.R;
-import com.statistical.time.adapter.RestCountAdapter;
 import com.statistical.time.adapter.SelectEventAdapter;
 import com.statistical.time.application.MyApplication;
 import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
-import com.statistical.time.bean.BirdayInfo;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.bean.EventInfo;
-import com.statistical.time.common.Constants;
-import com.statistical.time.common.EventBusCode;
 import com.statistical.time.tool.UiUtil;
 import com.statistical.time.widget.MyRecyclerViewDivider;
-
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;

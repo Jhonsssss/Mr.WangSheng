@@ -1,15 +1,18 @@
 package com.statistical.time.tool;
 
-import android.app.Activity;
+
 import android.content.Context;
+
 import android.text.TextUtils;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.google.gson.Gson;
 import com.statistical.time.R;
 import com.statistical.time.application.ActivityManager;
 import com.statistical.time.application.MyApplication;
-import com.statistical.time.bean.BirdayInfo;
+import com.statistical.time.bean.Weather;
 import com.statistical.time.common.InterfaceFinals;
 import com.statistical.time.common.PreferenceNames;
 import com.statistical.time.dialog.MaterialDialogBuilderL;
@@ -228,32 +231,7 @@ public class UserUtils {
 
     private static String SESSIONID_ID = null;
 
-    public static String getSessionId() {
-        if (TextUtils.isEmpty(SESSIONID_ID)) {
-            SESSIONID_ID = (String) SPUtil.get(MyApplication.getInstance().getContext(), InterfaceFinals.SP_SESSIONID,
-                    "");
-        }
-        return SESSIONID_ID;
-    }
 
-    public static void showTipsDialog(Activity activity, String tips) {
-        new MaterialDialogBuilderL(activity).content(tips)
-                .cancelable(false)
-                .positiveText(R.string.agree)
-                .onPositive(new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
-                        ActivityManager.getInstance().finishActivity();
-                    }
-                })
-                .negativeText(R.string.disagree)
-                .onNegative(new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
-                    }
-                })
-                .show();
-    }
 
     /**
      * 用户退出登录操作
@@ -299,10 +277,14 @@ public class UserUtils {
     public static final String KEY_FIRST_OPEN= "key_first_open";
     public static final String KEY_LOCK_STYLE= "key_lock_style";
     public static final String KEY_CURRENT_LOCK_STYLE= "key_current_lock_style";
+    public static final String KEY_WEATHER= "key_weather";
+    public static final String KEY_CURRENT_CITY= "key_current_city";
 
     public  static  boolean   isFirstOpen(Context context){
       return (boolean) SharedPreferencesUtils.getParam(context,KEY_FIRST_OPEN,true);
     }
+
+
 
     public  void  setFirstOpne(Context context,boolean isFirst){
         SharedPreferencesUtils.setParam(context,KEY_FIRST_OPEN,isFirst);
@@ -321,5 +303,22 @@ public class UserUtils {
     }
     public static int getCurrentLockStyle(Context context) {
      return (int) SharedPreferencesUtils.getParam(context,KEY_CURRENT_LOCK_STYLE,0);
+    }
+    public static Weather getWeather(Context context) {
+        String  s  = (String) SharedPreferencesUtils.getParam(context,KEY_WEATHER,"");
+
+         if (TextUtils.isEmpty(s))
+        return null;
+     return      new Gson().fromJson(s,Weather.class);
+    }
+    public static void setWeather(Context context,String  weather) {
+        SharedPreferencesUtils.setParam(context,KEY_WEATHER,weather);
+    }
+
+    public static void setCurrentCity(Context context,String toString) {
+        SharedPreferencesUtils.setParam(context,KEY_CURRENT_CITY,toString);
+    }
+    public static String getCurrentCity(Context context) {
+     return (String) SharedPreferencesUtils.getParam(context,KEY_CURRENT_CITY,"");
     }
 }

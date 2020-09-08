@@ -3,8 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
+    android:background="#eeeeee"
     >
-
+    <View
+        android:id="@+id/status_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 
     <com.statistical.time.widget.Watch
         android:id="@+id/watch"

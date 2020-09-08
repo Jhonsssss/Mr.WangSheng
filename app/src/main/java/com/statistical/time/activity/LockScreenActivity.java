@@ -7,6 +7,8 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -21,6 +23,7 @@ import com.statistical.time.bean.BirdayInfo;
 import com.statistical.time.common.Constants;
 import com.statistical.time.tool.LogUtil;
 import com.statistical.time.tool.Parser;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.UserUtils;
 import com.statistical.time.widget.Watch;
 
@@ -83,6 +86,14 @@ public class LockScreenActivity extends SwipeBackActivity {
             public void onScrollOverThreshold() {
             }
         });
+
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
     }
 

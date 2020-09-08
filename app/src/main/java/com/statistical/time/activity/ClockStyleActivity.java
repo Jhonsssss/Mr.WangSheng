@@ -2,12 +2,15 @@ package com.statistical.time.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.statistical.time.R;
 import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.Constants;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.widget.Watch;
 
 import butterknife.BindView;
@@ -37,8 +40,15 @@ public class ClockStyleActivity extends BaseActivity {
         setContentView(R.layout.activity_clock_stytle);
      unbinder = ButterKnife.bind(this);
      initWatch();
+        initStatusHeight();
     }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
+    }
     private void initWatch() {
         live_watch1.start(Constants.LIGHT_MODE);
         dead_watch1.start(Constants.DRAK_MODE);

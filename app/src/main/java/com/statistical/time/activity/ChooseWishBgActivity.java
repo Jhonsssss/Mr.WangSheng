@@ -2,11 +2,10 @@ package com.statistical.time.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.statistical.time.R;
 import com.statistical.time.adapter.BackgroundPicAdapter;
@@ -16,17 +15,10 @@ import com.statistical.time.bean.BackgroundBean;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.Constants;
 import com.statistical.time.common.EventBusCode;
-import com.statistical.time.tool.LogUtil;
-import com.statistical.time.tool.UiUtil;
-import com.statistical.time.widget.MyRecyclerViewDivider;
+import com.statistical.time.tool.SystemUtil;
 import com.tonicartos.superslim.LayoutManager;
 
 import org.greenrobot.eventbus.EventBus;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,6 +57,13 @@ public class ChooseWishBgActivity  extends BaseActivity{
         style =getIntent().getIntExtra("style",1);
       unbinder  = ButterKnife.bind(this);
       initRecyclerview();
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
     }
 

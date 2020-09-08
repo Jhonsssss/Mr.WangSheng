@@ -9,6 +9,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.Constants;
+import com.statistical.time.tool.SystemUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -73,6 +75,14 @@ public  class AddWishListActivity extends BaseActivity {
                 tv_length.setText(s.length()+"/20");
             }
         });
+        initStatusHeight();
+    }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
+
     }
 
     @BindView(R.id.et_hope)

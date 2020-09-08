@@ -1,6 +1,6 @@
 package com.statistical.time.widget;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -11,6 +11,8 @@ import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v4.view.ViewConfigurationCompat;
+
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Display;
@@ -20,6 +22,7 @@ import android.view.ViewConfiguration;
 import android.view.WindowManager;
 
 import com.statistical.time.R;
+
 
 
 /**
@@ -91,7 +94,7 @@ public class LockScreenView extends View {
     }
 
     private void init() {
-        mWindowManager = ((Activity) getContext()).getWindowManager();
+        mWindowManager = ((AppCompatActivity) getContext()).getWindowManager();
         mDisplay = mWindowManager.getDefaultDisplay();
         mScreenWidth = mDisplay.getWidth();
         mScreenHeight = mDisplay.getHeight();

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ff201F24</color>
-    <color name="colorPrimaryDark">#ff201F24</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
 
 
     <color name="red">#ee3b3b</color>
@@ -12,7 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="drak">#ff201F24</color>
     <color name="white_slight">#eeeeee</color>
-    <color name="white_alpha_6">#bbdddddd</color>
+    <color name="white_alpha_6">#dddddd</color>
     <color name="black">#000000</color>
     <color name="color_white">#ffffff</color>
     <color name="black_slight">#666666</color>
@@ -21,4 +21,11 @@
     <color name="color_3B3E45">#3B3E45</color>
     <color name="dialog_stroke">#EAF0F8</color>
     <color name="color_F8F8F8">#f8f8f8</color>
+
+    <color name="line_color">#e7e7e7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
+    <color name="orange">#FF6600</color>
+    <color name="blue">#009ed3</color>
+    <color name="text1">#59B29C</color>
 </resources>

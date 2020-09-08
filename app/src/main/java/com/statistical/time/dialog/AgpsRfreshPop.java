@@ -1,8 +1,10 @@
 package com.statistical.time.dialog;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
+
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-
 
 import com.statistical.time.R;
 import com.statistical.time.tool.UiUtil;
@@ -50,7 +51,7 @@ public class AgpsRfreshPop {
     }
   }
 
-  public void show(int tipsId, final Activity activity) {
+  public void show(int tipsId, final AppCompatActivity activity) {
     this.tips = tipsId;
     createPopDialog();
     anchor.post(new Runnable() {
@@ -77,7 +78,7 @@ public class AgpsRfreshPop {
     dismiss();
     View foot_popunwindwow = null;
     LayoutInflater LayoutInflater =
-        (android.view.LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+        (android.view.LayoutInflater) context.getSystemService(AppCompatActivity.LAYOUT_INFLATER_SERVICE);
     foot_popunwindwow = LayoutInflater.inflate(R.layout.pop_agps_tips_center, null);
     ButterKnife.bind(this, foot_popunwindwow);
     mPopupWindow = new PopupWindow(foot_popunwindwow, ViewGroup.LayoutParams.WRAP_CONTENT,

@@ -1,10 +1,10 @@
 package com.statistical.time.widget;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 import com.bumptech.glide.DrawableTypeRequest;
 import com.bumptech.glide.Glide;
@@ -244,8 +244,8 @@ public class NetworkImageView extends android.support.v7.widget.AppCompatImageVi
 
     public void  setImage(Object image) {
         setOriginScaleType(mPlaceHolderScaleType); //占位图scaleType
-        if(getContext() instanceof Activity) {
-            if(((Activity) getContext()).isFinishing() || ((Activity) getContext()).isDestroyed()) {
+        if(getContext() instanceof AppCompatActivity) {
+            if(((AppCompatActivity) getContext()).isFinishing() || ((AppCompatActivity) getContext()).isDestroyed()) {
                 return;
             }
         }

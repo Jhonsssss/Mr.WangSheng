@@ -31,6 +31,7 @@ import com.statistical.time.common.Constants;
 import com.statistical.time.common.EventBusCode;
 import com.statistical.time.tool.LogUtil;
 import com.statistical.time.tool.StringUtil;
+import com.statistical.time.tool.SystemUtil;
 import com.statistical.time.tool.TimeUtils;
 import com.statistical.time.tool.UiUtil;
 
@@ -113,8 +114,15 @@ public class AddWishActivity extends BaseActivity {
         tv_choose_bg.setText(mBackgroundBean.theme + "●" + StringUtil.int2chineseNum(Constants.getRealPosition(mBackgroundBean.index,styleType)));
         tv_add_type.setText("样式"+StringUtil.int2chineseNum(styleType));
         initLunarPicker();
+        initStatusHeight();
     }
+    private void initStatusHeight() {
+        View status_bar_height =findViewById(R.id.status_bar_height);
+        ViewGroup.LayoutParams layoutParams =  status_bar_height.getLayoutParams();
+        layoutParams.height  = SystemUtil.getStatusBarHeight(this);
+        status_bar_height.setLayoutParams(layoutParams);
 
+    }
 
     @BindView(R.id.tv_choose_bg)
     TextView tv_choose_bg;

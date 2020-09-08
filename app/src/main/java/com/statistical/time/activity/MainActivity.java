@@ -5,8 +5,6 @@ import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -19,9 +17,10 @@ import com.statistical.time.base.BaseActivity;
 import com.statistical.time.base.BasePresenter;
 import com.statistical.time.bean.EventCenter;
 import com.statistical.time.common.EventBusCode;
+import com.statistical.time.fragment.CalendarFragment;
 import com.statistical.time.fragment.DateFragment;
-import com.statistical.time.fragment.LiveFragment;
 import com.statistical.time.fragment.DeadFragment;
+import com.statistical.time.fragment.LiveFragment;
 import com.statistical.time.fragment.WishFragment;
 import com.statistical.time.model.MainActivityModel;
 import com.statistical.time.present.MainActivityPresent;
@@ -125,6 +124,9 @@ int  mIndex;
         if (riQiFragment!=null) {
             fTransaction.hide(riQiFragment);
         }
+        if (CalendarFragment!=null) {
+            fTransaction.hide(CalendarFragment);
+        }
         if (shengFragment!=null) {
             fTransaction.hide(shengFragment);
         }
@@ -187,12 +189,24 @@ int  mIndex;
                 }
                 fTransaction.commit();
                 break;
+            case 4:
+                ivRiqi.setSelected(true);
+                if (CalendarFragment==null) {
+                    LogUtil.e("初始化","初始化++++++++++++RiQiFragment111");
+                    CalendarFragment = new CalendarFragment();
+                    fTransaction.add(R.id.fl_content,CalendarFragment);
+                }else{
+                    fTransaction.show(CalendarFragment);
+                }
+                fTransaction.commit();
+                break;
 
                 default:
                     break;
         }
     }
     DateFragment riQiFragment;
+   CalendarFragment CalendarFragment;
     LiveFragment shengFragment;
     DeadFragment siFragment;
     WishFragment xiyuanFragment;
@@ -212,7 +226,7 @@ int  mIndex;
              setTab(2);
              break;
          case  R.id.ll_riqi:
-             setTab(3);
+             setTab(4);
              break;
             default:
                 break;
