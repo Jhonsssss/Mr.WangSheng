@@ -22,19 +22,19 @@ public class DaoMaster extends AbstractDaoMaster {
     /** Creates underlying database table using DAOs. */
     public static void createAllTables(Database db, boolean ifNotExists) {
         BirdayInfoDao.createTable(db, ifNotExists);
+        CityInfoDao.createTable(db, ifNotExists);
         EventInfoDao.createTable(db, ifNotExists);
         RiLiEntityDao.createTable(db, ifNotExists);
         WishInfoDao.createTable(db, ifNotExists);
-        CityInfoDao.createTable(db, ifNotExists);
     }
 
     /** Drops underlying database table using DAOs. */
     public static void dropAllTables(Database db, boolean ifExists) {
         BirdayInfoDao.dropTable(db, ifExists);
+        CityInfoDao.dropTable(db, ifExists);
         EventInfoDao.dropTable(db, ifExists);
         RiLiEntityDao.dropTable(db, ifExists);
         WishInfoDao.dropTable(db, ifExists);
-        CityInfoDao.dropTable(db, ifExists);
     }
 
     /**
@@ -54,10 +54,10 @@ public class DaoMaster extends AbstractDaoMaster {
     public DaoMaster(Database db) {
         super(db, SCHEMA_VERSION);
         registerDaoClass(BirdayInfoDao.class);
+        registerDaoClass(CityInfoDao.class);
         registerDaoClass(EventInfoDao.class);
         registerDaoClass(RiLiEntityDao.class);
         registerDaoClass(WishInfoDao.class);
-        registerDaoClass(CityInfoDao.class);
     }
 
     public DaoSession newSession() {
